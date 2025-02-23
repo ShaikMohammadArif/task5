@@ -1,0 +1,130 @@
+html code
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DATANX application</title>
+        <link rel="stylesheet" href="task5style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1>DATANEX application</h1>
+                <div class="small-heading">
+                    <h3>(web)</h3>
+                </div>
+            
+            </div>
+            <div class="main-content">
+                <label for="firstname">Enter first name</label>
+                <input type="text" id="firstname" >
+            </div>
+            <div class="main-content">
+                <label for="secondname">Enter second name</label>
+                <input type="text" id="secondname" >
+            
+                <div class="main-content">
+                    <label for="email">Enter your email</label>
+                    <input type="text" id="email" >
+                </div>
+                <div class="main-content">
+                    <label for="job">job role</label>
+                    <select name="job" id="job">
+                        <option value="front-web">Front end developer</option>
+                        <option value="analyst">data analyst</option>
+                        <option value="back web">back end developer</option>
+                        <option value="networks">computer networks</option>
+                    </select>
+                </div>
+
+                
+                    <label for="address">Enter address</label>
+                <textarea id="address" name="address"
+                row="10" column="10"></textarea>
+                
+            
+                <div class="main-content">
+                    <label for="city">Enter your city</label>
+                    <input type="text" id="city" >
+                </div>
+
+                <div class="main-content">
+                    <label for="pincode">date of birth</label>
+                    <input type="date" id="pincode" >
+                </div>
+
+               
+
+                <div class="main-content">
+                    <label for="file">Enter your cv</label>
+                    <input type="file" id="file" >
+                </div>
+
+                <div class="button">
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+css code
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 600px;
+    margin-left: 600px;
+    margin-top: 100px;
+   height: 650px;
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px black;;
+   
+}
+
+.heading{
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.heading h1{
+    transition: color 2s ease;
+}
+
+.heading h1:hover{
+    color: red;
+}
+.small-heading h3{
+    
+    margin-left: 300px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.main-content input{
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+button:hover{
+    box-shadow: 2px 2px 4px black;
+    background-color: blue;
+}
